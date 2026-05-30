@@ -1,0 +1,12 @@
+# Build outputs
+bin/
+obj/
+
+# macOS
+.DS_Store
+
+# Duplicate solution file
+*\ 2.sln
+
+# Rendered output (opcjonalnie, usuń tę linię jeśli chcesz mieć output.png w repo)
+output.png

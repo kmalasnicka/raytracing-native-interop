@@ -35,8 +35,8 @@
 
   <Target Name="BuildNative" BeforeTargets="BeforeBuild" Inputs="@(NativeSources)" Outputs="$(NativeLibPath)">
     <MakeDir Directories="$(NativeBuildDir)" />
-    <Exec Command="cmake -S native -B $(NativeBuildDir) -DCMAKE_BUILD_TYPE=$(Configuration)" />
-    <Exec Command="cmake --build $(NativeBuildDir) --config $(Configuration)" />
+    <Exec Command='cmake -S native -B "$(NativeBuildDir)" -DCMAKE_BUILD_TYPE=$(Configuration)' />
+    <Exec Command='cmake --build "$(NativeBuildDir)" --config $(Configuration)' />
   </Target>
 
 </Project>
